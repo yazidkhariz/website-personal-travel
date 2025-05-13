@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: DM Sans;
+}
+
+
+header {
+    width: 98vw;
+    min-height: 100vh;
+    margin: 10px auto;
+    padding: 30px 30px;
+    border-radius: 12px;
+    background-image: url(asset/498507b5569e63334da6755b5b9b2340.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+
+        .logo {
+            flex: 1;
+            text-align: center;
+            align-self: center;
+        }
+
+        .navigasi {
+            flex: 2.5;
+            display: flex;
+            justify-content: space-evenly;
+            backdrop-filter: blur(40px) opacity(0.8);
+            border-radius: 10px;
+            padding: 5px 0;
+            text-transform: capitalize;
+        }
+
+        .btn {
+            flex: 1;
+            display: flex;
+            justify-content: space-evenly;
+            align-self: center;
+
+            .language  {
+                backdrop-filter: blur(40px) opacity(0.8);
+                border-radius: 10px;
+                padding: 6px 5px;
+            }
+            
+            a{
+                color: black;
+                align-self: center;
+                padding: 6px 20px;
+                border-radius: 40px;
+                background-color: white;
+
+            }
+        }
+    }
+
+
+
+    article {
+        text-align: center;
+        margin-top: 100px;
+        color: rgb(0, 0, 0);
+
+        > h2 {
+            font-size: 50px;
+        }
+
+        > p {
+            font-weight: 1000;
+        }
+
+        .list {
+            max-width: 700px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 11px 15px;
+            border-radius: 20px;
+            margin: 0px auto;
+            margin-top: 25px;
+            backdrop-filter: blur(40px) ;
+            gap: 20px;
+
+            li {
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                border-right: 2px solid white ;
+
+                span {
+                    margin-left: 10px;
+                    margin-right: 30px;
+                }
+
+                .iconakhir{
+                    padding-right: 20px;
+                }
+
+                a{
+                    color: white;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+
+    .value {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+        top: 180px;
+        margin-bottom: 30px;
+
+        .valueitem {
+        width: 250px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        padding: 20px 0;
+        border-radius: 10px;
+        box-shadow: -10px 10px 40px rgb(0, 0, 0, 0.3);
+        }
+}
+
+}
+
+
+/* Section | artikel-1 */
+
+.artikel1 {
+    width: 90%;
+    margin: 130px auto;
+}
+
+.judulsub-artikel1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .judulsub2-artikel1 h2 {
+        font-size: 50px;
+    }
+
+    p {
+        align-self: flex-end;
+    }
+}
+
+.gambar-artikel2 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: 
+    'bromo bromo bromo denpasar'
+    'lampung jogjakarta jogjakarta jogjakarta';
+    grid-auto-rows: 400px;
+    gap: 20px;
+
+    .bromo {
+        grid-area: bromo;
+        background-image: url(asset/pexels-jeffry-surianto-10429918.jpg);
+    }
+
+    .denpasar {
+        grid-area: denpasar;
+        background-image: url(asset/pexels-oleksandr-p-2166553.jpg);
+    }
+
+    .lampung {
+        grid-area: lampung;
+        background-image: url(asset/pexels-sergio-scandroglio-15436148.jpg);
+    }
+
+    .jogjakarta {
+        grid-area: jogjakarta;
+        background-image: url(asset/pexels-pixabay-161293.jpg);
+    }
+
+    .item-gambar2 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        box-shadow: -2px 5px 20px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: flex-end;
+        color: white;
+    }
+}
+
+
+/* section | artikel 2 */
+
+.artikel2 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item-artikel2 {
+        width: 47%;
+        min-width: 400px;
+    }
+
+    .img-artikel2 {
+        background-image: url(asset/pexels-jonas-ferlin-1938032.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: end;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .listbesar-artikel2 {
+        margin-top: 20px;
+    }
+    .listbesar-artikel2 h2 {
+        font-size: 60px;
+    }
+
+    .list-artikel2 .item-list-artikel2 {
+        display: flex;
+        margin: 20px 0px;
+        gap: 20px;
+        padding: 15px;
+        background-color: rgb(245, 245, 245);
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .item-list-artikel2 span {
+        display: block;
+        padding: 10px;
+        height: 44px;
+        border-radius: 10px;
+        /* overflow: hidden; */
+        background-color: rgb(162, 187, 209);
+    }
+}
+
+/* Artikel - 3 */
+
+.artikel3{
+    width: 90%;
+    margin: 70px auto;
+
+    .judul-artikel3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .subjudul-artikel3 h2 {
+            font-size: 50px;
+        }
+
+        p {
+            align-self: flex-end;
+        }
+    }
+
+    .img-artikel3 {
+        margin: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px 10px;
+
+        .item-img3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 340px;
+            height: 440px;
+            border-radius: 20px;
+            padding: 20px 20px;
+            background-size: cover;
+            background-position: center;
+
+
+            > p {
+                height: fit-content;
+                padding: 10px;
+                border-radius: 10px;
+                backdrop-filter: blur(30px) opacity(0.8);
+            }
+
+            .namePrice{
+                width: 100%;
+                align-self: flex-end;
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
+                text-transform: capitalize;
+                backdrop-filter: blur(50px) opacity(0.8);
+
+                .subnamePrice {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    
+    .btn-artikel3 {
+        text-align: center;
+
+        a {
+            padding: 10px 30px;
+            border-radius: 20px;
+            color: white;
+            background-color: black;
+        }
+    }
+    
+}
+
+
+/* REview Profile */
+
+.review-profile {
+    width: 90%;
+    margin: 70px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 100px ;
+    
+    .account-profile {
+        width: 300px;
+        min-width: 25%;
+        
+        .photo-profile {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .btn-slide {
+            margin-top: 50px;
+        }
+    }
+
+    .comment-profile {
+        max-width: 65%;
+        text-align: justify;
+    }
+}
+
+
+@media only screen and (max-width: 888px){
+    .img-artikel2 {
+        height: 80vh;
+    }
+
+    .gambar-artikel2{
+        /* grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-template-rows: 400px 400px; */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'bromo bromo bromo bromo'
+        'denpasar denpasar lampung lampung'
+        'jogjakarta jogjakarta jogjakarta jogjakarta';
+    }    
+
+    .artikel2 {
+        justify-content: center;
+    }
+
+    .value .valueitem {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header article > h2 {
+        font-size: 30px;
+    }
+
+    .judulsub-artikel1 .judulsub2-artikel1 h2,
+    .artikel3 .judul-artikel3 .subjudul-artikel3 h2 {
+        font-size: 32px;
+    }
+
+    .artikel2 .item-artikel2 {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .artikel2 .listbesar-artikel2 h2 {
+        font-size: 36px;
+    }
+
+    /* .artikel3 .img-artikel3 .item-img3 {
+        width: 100%;
+        height: auto;
+    } */
+
+    .review-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-profile .comment-profile {
+        max-width: 100%;
+    }
+
+    .review-profile .account-profile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigasi {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gambar-artikel2 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'bromo'
+            'denpasar'
+            'lampung'
+            'jogjakarta';
+        grid-auto-rows: 300px;
+    }
+}
+
